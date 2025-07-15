@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #fdfdfd;
+    color: 000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Title */
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.title h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.03rem;
+    margin-bottom: 8px;
+}
+
+.title p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #737373;
+}
+
+/* Calculator [Main Container] */
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #232522;
+    color: #ffffff;
+    width: 350px;
+    max-width: 100%;
+    border-radius: 12px;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.4));
+}
+
+/* Input Display */
+
+#display{
+    width: 350px;
+    height: 150px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 24px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: right;
+}
+
+/* Buttons */
+
+.buttons{
+    padding: 24px;
+}
+
+.buttons button{
+    padding: 12px 20px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid #000000;
+}
+
+.buttons
+.buttons-first-line,
+.buttons-second-line,
+.buttons-third-line,
+.buttons-fourth-line,
+.buttons-last-line{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: stretch;
+    justify-content: center;
+    gap: 8px;
+}
+
+.buttons
+.buttons-first-line,
+.buttons-second-line,
+.buttons-third-line,
+.buttons-fourth-line{
+    margin-bottom: 8px;
+}
+
+.buttons #dark-orange{
+    background-color: #f5923e;
+    color: #ffffff;
+}
+
+.buttons #dark-orange:hover{
+    background-color: #eb760f;
+    color: #ffffff;
+}
+
+.buttons #off-white{
+    background-color: #ababab;
+    color: #ffffff;
+}
+
+.buttons #off-white:hover{
+    background-color: #6f6f6f;
+    color: #ffffff;
+}
+
+.buttons #dark-green{
+    background-color: #008001;
+    color: #ffffff;
+}
+
+.buttons #dark-green:hover{
+    background-color: #015d01;
+    color: #ffffff;
+}
+
+.buttons #red{
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.buttons #red:hover{
+    background-color: #d40303;
+    color: #ffffff;
+}
+
+/* Media Query (Responsiveness)*/
+
+@media (max-width:768px){
+    .title h2{
+        font-size: 2rem;
+    }
+}

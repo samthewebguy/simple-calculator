@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Build a simple Calculator with HTML, CSS, Javascript">
+    <meta name="keywords" content="simple calculator for frontend beginner, calculator with HTML, CSS, Javascript">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@11/lib/browser/math.js"></script>
+
+</head>
+<body>
+    <div class="title">
+        <h2>Simple Calculator</h2>
+        <p>HTML, CSS, Javascript Exercise for Beginner</p>
+    </div>
+    <!-- Main Container -->
+    <div class="calculator">
+
+        <!-- Input Field -->
+
+        <div class="input-wrapper">
+            <input type="text" id="display" disabled>
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+            <div class="buttons-first-line">
+            <button onclick="press('*')" id="dark-orange">x</button>
+            <button onclick="press('/')" id="dark-orange">/</button>
+            <button onclick="press('-')" id="dark-orange">-</button>
+            <button onclick="press('+')" id="dark-orange">+</button>
+            </div>
+
+            <div class="buttons-second-line">
+            <button onclick="press('9')" id="off-white">9</button>
+            <button onclick="press('8')" id="off-white">8</button>
+            <button onclick="press('7')" id="off-white">7</button>
+            <button onclick="press('6')" id="off-white">6</button>
+            </div>
+
+            <div class="buttons-third-line">
+            <button onclick="press('5')" id="off-white">5</button>
+            <button onclick="press('4')" id="off-white">4</button>
+            <button onclick="press('3')" id="off-white">3</button>
+            <button onclick="press('2')" id="off-white">2</button>
+            </div>
+
+            <div class="buttons-fourth-line">
+                <button onclick="press('1')" id="off-white">1</button>
+                <button onclick="press('0')" id="off-white">0</button>
+                <button onclick="press('.')" id="off-white">.</button>
+                <button onclick="calculate()" id="dark-green">=</button>
+            </div>
+
+            <div class="buttons-last-line">
+                <button onclick="clearDisplay()" id="red">C</button>
+                <button onclick="press('%')" id="off-white">%</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
