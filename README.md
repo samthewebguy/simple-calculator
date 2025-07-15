@@ -27,7 +27,7 @@ A lightweight and responsive calculator built using **HTML**, **CSS**, and **Jav
 
 ## Preview
 
-![Simple Calculator Preview](Screenshot.png)
+![Simple Calculator Preview](Images/Screenshot.png)
 
 ---
 
